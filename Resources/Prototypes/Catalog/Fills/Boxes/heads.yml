@@ -8,6 +8,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: SalvageShuttleConsoleCircuitboard # SIS-Mining_Shuttle
         - id: CargoBountyComputerCircuitboard
         - id: CargoRequestComputerCircuitboard
         - id: CargoSaleComputerCircuitboard
