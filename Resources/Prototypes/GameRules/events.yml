@@ -22,10 +22,10 @@
     - id: SolarFlare
     - id: SnakeSpawn
     - id: SpiderClownSpawn
-    # SIS start
+    # SIS-PsiMonkey Start
     - id: BluePsiMonkeySpawn 
     - id: RedPsiMonkeySpawn
-    # SIS end
+    # SIS-PsiMonkey End
     - id: SpiderSpawn
     - id: VentClog
 
