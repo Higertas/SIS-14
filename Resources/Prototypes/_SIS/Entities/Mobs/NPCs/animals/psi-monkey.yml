@@ -25,7 +25,7 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
-  - type: Prying 
+  - type: Prying
     pryPowered: true
     force: true
     speedModifier: 2
@@ -62,13 +62,13 @@
     spawned:
     - id: PsiMonkeyRedBrain
       amount: 1
-    
+
 - type: entity
-  categories: [ HideSpawnMenu ]
   id: Pyrokines
   parent: DragonsBreathGun
   name: Pyrokines
   description: A powerful surge of psi energy.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Gun
     clumsyProof: true
@@ -99,7 +99,6 @@
     range: 0
   - type: WorldTargetAction
     event: !type:ActionGunShootEvent
-  
 
 - type: entity
   name: psi-monkey
@@ -110,12 +109,6 @@
   - type: ActionGun
     action: ActionCryokinesRay
     gunProto: Cryokines
-  - type: Prying 
-    pryPowered: true
-    force: true
-    speedModifier: 1.5
-    useSound:
-      path: /Audio/Items/crowbar.ogg
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -139,13 +132,12 @@
     - id: PsiMonkeyBlueBrain
       amount: 1
 
-
 - type: entity
-  categories: [ HideSpawnMenu ]
   id: Cryokines
   parent: DragonsBreathGun
   name: Cryokines
   description: A powerful surge of psi energy.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Gun
     clumsyProof: true
@@ -164,7 +156,7 @@
   components:
   - type: ChangeTemperatureOnCollide
     heat: -900000
-    
+
 - type: entity
   parent: BaseAction
   id: ActionCryokinesRay
