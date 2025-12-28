@@ -12,14 +12,14 @@
     duration: 60
   - type: VentCrittersRule
     entries:
-    - id: MobSISFirePsiMonkey
+    - id: MobFirePsiMonkey
       prob: 0.01
 
 - type: entity
-  id: BluePsiMonkeySpawn 
+  id: BluePsiMonkeySpawn
   parent: RedPsiMonkeySpawn
   components:
   - type: VentCrittersRule
     entries:
-    - id: MobSISIcePsiMonkey
+    - id: MobIcePsiMonkey
       prob: 0.02

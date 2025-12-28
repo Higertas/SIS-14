@@ -1,6 +1,6 @@
 - type: entity
   name: psi-monkey
-  id: MobSISFirePsiMonkey
+  id: MobFirePsiMonkey
   parent: MobBaseAncestor
   description: A strange-looking monkey with a red, exposed brain.
   components:
@@ -85,25 +85,15 @@
   categories: [ HideSpawnMenu ]
 
 - type: entity
-  parent: BaseAction
+  parent: ActionDragonsBreath
   id: ActionPyrokinesBall
   name: "[color=red]Pyrokines[/color]"
   description: A powerful surge of psi energy that sets everyone in its path on fire.
-  components:
-  - type: Action
-    icon: { sprite : Objects/Weapons/Guns/Projectiles/magic.rsi, state: fireball }
-    itemIconStyle: BigAction
-    priority: 2
-  - type: TargetAction
-    checkCanAccess: false
-    range: 0
-  - type: WorldTargetAction
-    event: !type:ActionGunShootEvent
 
 - type: entity
   name: psi-monkey
-  id: MobSISIcePsiMonkey
-  parent: MobSISFirePsiMonkey
+  id: MobIcePsiMonkey
+  parent: MobFirePsiMonkey
   description: A strange-looking monkey with a blue exposed brain.
   components:
   - type: ActionGun
@@ -158,17 +148,10 @@
     heat: -900000
 
 - type: entity
-  parent: BaseAction
+  parent: ActionDragonsBreath
   id: ActionCryokinesRay
   name: "[color=blue]Cryokines[/color]"
   description: A powerful burst of psi energy that freezes the target.
   components:
   - type: Action
     icon: { sprite : Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi, state: omnilaser }
-    itemIconStyle: BigAction
-    priority: 2
-  - type: TargetAction
-    checkCanAccess: false
-    range: 0
-  - type: WorldTargetAction
-    event: !type:ActionGunShootEvent

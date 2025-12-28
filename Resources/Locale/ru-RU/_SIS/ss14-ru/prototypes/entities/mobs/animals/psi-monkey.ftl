@@ -1,6 +1,6 @@
-ent-MobSISFirePsiMonkey = пси-обезьяна
+ent-MobFirePsiMonkey = пси-обезьяна
     .desc = Странно выглядящая обезьяна с красным оголённым мозгом.
-ent-MobSISIcePsiMonkey = пси-обезьяна
+ent-MobIcePsiMonkey = пси-обезьяна
     .desc = Странно выглядящая обезьяна с синим оголённым мозгом.
 ent-Pyrokines = пирокинез
     .desc = Мощный всплеск пси энергии.
