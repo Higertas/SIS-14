@@ -1,0 +1,23 @@
+- type: entity
+  parent: ResearchDisk
+  id: PsiMonkeyBlueBrain
+  name: синий мозг
+  description: Странно выглядящий синий мозг, полученный из черепа пси-обезьяны.
+  components:
+  - type: ResearchDisk
+    points: 1000
+  - type: Sprite
+    sprite: _SIS/Objects/Specific/Research/psimonkey_brain.rsi
+    state: icon-blue
+
+- type: entity
+  parent: ResearchDisk
+  id: PsiMonkeyRedBrain
+  name: красный мозг
+  description: Странно выглядящий красный мозг, полученный из черепа пси-обезьяны.
+  components:
+  - type: ResearchDisk
+    points: 2000
+  - type: Sprite
+    sprite: _SIS/Objects/Specific/Research/psimonkey_brain.rsi
+    state: icon-red
