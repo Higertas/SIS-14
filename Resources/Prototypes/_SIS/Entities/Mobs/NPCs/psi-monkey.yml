@@ -1,8 +1,8 @@
 - type: entity
-  name: пси-обезьяна
+  name: psi-monkey
   id: MobSISFirePsiMonkey
   parent: MobBaseAncestor
-  description: Странно выглядящая обезьяна с красным оголённым мозгом.
+  description: A strange-looking monkey with a red, exposed brain.
   components:
   - type: ActionGun
     action: ActionPyrokinesBall
@@ -63,16 +63,12 @@
     - id: PsiMonkeyRedBrain
       amount: 1
     
-
-
-
-    
 - type: entity
   categories: [ HideSpawnMenu ]
   id: Pyrokines
   parent: DragonsBreathGun
-  name: Пирокинез
-  description: Мощный всплеск пси энергии
+  name: Pyrokines
+  description: A powerful surge of psi energy.
   components:
   - type: Gun
     clumsyProof: true
@@ -84,14 +80,15 @@
 - type: entity
   parent: ProjectileDragonsBreath
   id: PyrokinesBall
-  name: Пирокинетический снаряд
+  name: Pyrokinetic projectile
+  description: A powerful surge of psi energy.
   categories: [ HideSpawnMenu ]
 
 - type: entity
   parent: BaseAction
   id: ActionPyrokinesBall
-  name: "[color=red]Пирокинез[/color]"
-  description: Мощный всплеск пси-энергии, поджигающий всех на своем пути.
+  name: "[color=red]Pyrokines[/color]"
+  description: A powerful surge of psi energy that sets everyone in its path on fire.
   components:
   - type: Action
     icon: { sprite : Objects/Weapons/Guns/Projectiles/magic.rsi, state: fireball }
@@ -105,10 +102,10 @@
   
 
 - type: entity
-  name: пси-обезьяна
+  name: psi-monkey
   id: MobSISIcePsiMonkey
   parent: MobSISFirePsiMonkey
-  description: Странно выглядящая обезьяна с синим оголённым мозгом.
+  description: A strange-looking monkey with a blue exposed brain.
   components:
   - type: ActionGun
     action: ActionCryokinesRay
@@ -147,8 +144,8 @@
   categories: [ HideSpawnMenu ]
   id: Cryokines
   parent: DragonsBreathGun
-  name: Криокинез
-  description: Мощный всплеск пси энергии
+  name: Cryokines
+  description: A powerful surge of psi energy.
   components:
   - type: Gun
     clumsyProof: true
@@ -161,7 +158,8 @@
 - type: entity
   parent: BoltTempgunCold
   id: CryokinesRay
-  name: Криокинетический снаряд
+  name: Cryokinetic projectile
+  description: A powerful surge of psi energy.
   categories: [ HideSpawnMenu ]
   components:
   - type: ChangeTemperatureOnCollide
@@ -170,8 +168,8 @@
 - type: entity
   parent: BaseAction
   id: ActionCryokinesRay
-  name: "[color=blue]Криокинез[/color]"
-  description: Мощный всплеск пси-энергии, замораживающий цель.
+  name: "[color=blue]Cryokines[/color]"
+  description: A powerful burst of psi energy that freezes the target.
   components:
   - type: Action
     icon: { sprite : Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi, state: omnilaser }

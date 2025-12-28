@@ -1,8 +1,8 @@
 - type: entity
   parent: ResearchDisk
   id: PsiMonkeyBlueBrain
-  name: синий мозг
-  description: Странно выглядящий синий мозг, полученный из черепа пси-обезьяны.
+  name: blue brain
+  description: The strange-looking blue brain extracted from the psy-monkey's skull holds scientific value.
   components:
   - type: ResearchDisk
     points: 1000
@@ -13,8 +13,8 @@
 - type: entity
   parent: ResearchDisk
   id: PsiMonkeyRedBrain
-  name: красный мозг
-  description: Странно выглядящий красный мозг, полученный из черепа пси-обезьяны.
+  name: red brain
+  description: The strange-looking red brain extracted from the psy-monkey's skull holds great scientific value.
   components:
   - type: ResearchDisk
     points: 2000

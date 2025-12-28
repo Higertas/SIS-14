@@ -15,8 +15,6 @@
     - id: MobSISFirePsiMonkey
       prob: 0.01
 
-
-
 - type: entity
   id: BluePsiMonkeySpawn 
   parent: RedPsiMonkeySpawn
