@@ -8,7 +8,11 @@
   "copyright": "Taken from https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b, edited by Alekshhh (github) for SS14, edited by Liem161 (github) for SIS-14",
   "states": [
     {
-      "name": "monkey",
+      "name": "red",
+      "directions": 4
+    },
+    {
+      "name": "blue",
       "directions": 4
     }
   ]

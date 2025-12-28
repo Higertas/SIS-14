@@ -10,8 +10,8 @@
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: monkey
-      sprite: _SIS/Mobs/Animals/red_psimonkey.rsi
+      sprite: _SIS/Mobs/Animals/psimonkey.rsi
+      state: red
     - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
@@ -102,8 +102,8 @@
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: monkey
-      sprite: _SIS/Mobs/Animals/blue_psimonkey.rsi
+      sprite: _SIS/Mobs/Animals/psimonkey.rsi
+      state: blue
     - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
