@@ -2,7 +2,7 @@
   id: Kobold
   name: species-name-kobold
   roundStart: true
-  prototype: MobSTKobold
+  prototype: MobSISKobold
   sprites: MobKoboldSprites
   defaultSkinTone: "#34a223"
   markingLimits: MobKoboldMarkingLimits
