@@ -103,7 +103,6 @@
     soundGunshot:
       path: /Audio/Weapons/emitter.ogg
     projectileSpeed: 125
-    sprite: Clothing/Hands/Gloves/KnuckleDusters/brassknuckleduster.rsi
   - type: Construction
     graph: WeaponPsiPsioPka
     node: icon
@@ -117,9 +116,9 @@
     proto: BulletTaser
     capacity: 2
     count: 1
-  - type: ToggleClothing
-    action: ActionPsionikStrike
-    mustEquip: false
+  - type: Spellbook
+    spellActions:
+      ActionPsionikStrike: null
  
 - type: entity
   name : psionic surge
