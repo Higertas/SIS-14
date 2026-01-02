@@ -1,0 +1,11 @@
+- type: loadout
+  id: BibleHolyBlessing
+  storage:
+    back:
+    - BibleHolyBlessing
+
+- type: loadout
+  id: BibleDarkBlessing
+  storage:
+    back:
+    - BibleDarkBlessing

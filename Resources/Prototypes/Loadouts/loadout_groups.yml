@@ -450,6 +450,10 @@
   - Bible
   - BibleNanoTrasen
   - BibleDruid
+  # SIS-start
+  - BibleHolyBlessing
+  - BibleDarkBlessing
+  # SIS-end
   - BibleHonk
   - BibleRatvar
   - BibleNarsie

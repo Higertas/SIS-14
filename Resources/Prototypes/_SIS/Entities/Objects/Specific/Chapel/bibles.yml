@@ -1,0 +1,21 @@
+- type: entity
+  id: BibleHolyBlessing
+  name: holy blessing
+  parent: Bible
+  description: A technologically modified blessing that you can hold in your hands.
+  components:
+  - type: Sprite
+    sprite: _SIS/Objects/Specific/Chapel/holyblessing.rsi
+  - type: Item
+    sprite: _SIS/Objects/Specific/Chapel/holyblessing.rsi
+
+- type: entity
+  id: BibleDarkBlessing
+  name: dark blessing
+  parent: Bible
+  description: A damn real cool blessing dude.
+  components:
+  - type: Sprite
+    sprite: _SIS/Objects/Specific/Chapel/darkblessing.rsi
+  - type: Item
+    sprite: _SIS/Objects/Specific/Chapel/darkblessing.rsi
