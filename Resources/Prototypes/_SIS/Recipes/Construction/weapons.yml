@@ -2,7 +2,7 @@
   id: WeaponPsiPsioPka
   graph: WeaponPsiPsioPka
   startNode: start
-  targetNode: icon
+  targetNode: weaponPsiPsioPka
   category: construction-category-weapons
   objectType: Item
 
@@ -10,14 +10,14 @@
   id: WeaponPsiPyroPka
   graph: WeaponPsiPyroPka
   startNode: start
-  targetNode: icon
+  targetNode: weaponPsiPyroPka
   category: construction-category-weapons
   objectType: Item
-  
+
 - type: construction
   id: WeaponPsiCryoPka
   graph: WeaponPsiCryoPka
   startNode: start
-  targetNode: icon
+  targetNode: weaponPsiCryoPka
   category: construction-category-weapons
   objectType: Item

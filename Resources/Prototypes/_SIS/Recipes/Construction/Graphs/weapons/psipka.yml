@@ -4,7 +4,7 @@
   graph:
     - node: start
       edges:
-        - to: icon
+        - to: weaponPsiPsioPka
           steps:
             - tag: BasePsiPka
               name: construction-graph-tag-psi-pka
@@ -22,7 +22,7 @@
               icon:
                 sprite: _SIS/Objects/Specific/Research/psimonkey_brain.rsi
                 state: icon-blue
-    - node: icon
+    - node: weaponPsiPsioPka
       entity: WeaponPsiPsioPka
 
 - type: constructionGraph
@@ -31,7 +31,7 @@
   graph:
     - node: start
       edges:
-        - to: icon
+        - to: weaponPsiPyroPka
           steps:
             - tag: BasePsiPka
               name: construction-graph-tag-psi-pka
@@ -44,7 +44,7 @@
               icon:
                 sprite: _SIS/Objects/Specific/Research/psimonkey_brain.rsi
                 state: icon-red
-    - node: icon
+    - node: weaponPsiPyroPka
       entity: WeaponPsiPyroPka
 
 - type: constructionGraph
@@ -53,7 +53,7 @@
   graph:
     - node: start
       edges:
-        - to: icon
+        - to: weaponPsiCryoPka
           steps:
             - tag: BasePsiPka
               name: construction-graph-tag-psi-pka
@@ -66,5 +66,5 @@
               icon:
                 sprite: _SIS/Objects/Specific/Research/psimonkey_brain.rsi
                 state: icon-blue
-    - node: icon
+    - node: weaponPsiCryoPka
       entity: WeaponPsiCryoPka
