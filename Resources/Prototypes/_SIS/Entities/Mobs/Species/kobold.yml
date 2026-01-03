@@ -21,7 +21,7 @@
   - type: Puller
     needsHands: false
   - type: Fixtures
-    fixtures: 
+    fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
@@ -80,10 +80,10 @@
     specificHeat: 42
     coldDamage:
       types:
-        Cold : 0.1 
+        Cold : 0.1
     heatDamage:
       types:
-        Heat : 1.5 
+        Heat : 1.5
   - type: TemperatureSpeed
     thresholds:
       301: 0.8
@@ -99,7 +99,6 @@
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
   - type: NoSlip
-
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -124,5 +123,3 @@
           32:
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
-
-
