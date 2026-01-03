@@ -1,18 +1,29 @@
 - type: entity
-  name: white-Pyro Psi Accelerator
-  parent: [ BaseItem, BaseMajorContraband ]
-  id: WeaponPsiPyroPka
-  description: A psi-accelerator configuration that allows you to create fire matter using a psi field.
+  parent: BaseItem
+  id: PsiPka
+  name: White-Base Psi Accelerator
+  description: A tool that allows any sentient being to control the psi field. Requires a psi monkey brain to function.
   components:
   - type: Sprite
     sprite: _SIS/Objects/Weapons/psipka.rsi
-    layers:
-    - state: icon-red
+    state: icon-base
   - type: Item
     sprite: _SIS/Objects/Weapons/psipka.rsi
     size: Large
     shape:
     - 0,0,2,1
+  - type: Tag
+    tags:
+    - BasePsiPka
+
+- type: entity
+  name: White-Pyro Psi Accelerator
+  parent: PsiPka
+  id: WeaponPsiPyroPka
+  description: A psi-accelerator configuration that allows you to create fire matter using a psi field.
+  components:
+  - type: Sprite
+    state: icon-red
   - type: MeleeWeapon
     attackRate: 0.75
     angle: 0
@@ -22,27 +33,21 @@
     animation: WeaponArcFist
   - type: Construction
     graph: WeaponPsiPyroPka
-    node: icon
+    node: weaponPsiPyroPka
   - type: IgniteOnMeleeHit
     fireStacks: 1
   - type: DisarmMalus
-
+  - type: Tag
+    tags: [ ]
 
 - type: entity
-  name: white-Cryo Psi Accelerator
-  parent: BaseItem
+  name: White-Cryo Psi Accelerator
+  parent: PsiPka
   id: WeaponPsiCryoPka
   description: A psi-accelerator configuration that allows you to create ice matter using a psi field
   components:
   - type: Sprite
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    layers:
-    - state: icon-blue
-  - type: Item
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    size: Large
-    shape:
-    - 0,0,2,1
+    state: icon-blue
   - type: Gun
     fireRate: 0.5
     selectedMode: SemiAuto
@@ -53,7 +58,7 @@
     projectileSpeed: 10
   - type: Construction
     graph: WeaponPsiCryoPka
-    node: icon
+    node: weaponPsiCryoPka
   - type: AmmoCounter
   - type: Appearance
   - type: RechargeBasicEntityAmmo
@@ -69,32 +74,27 @@
   - type: Summonable
     specialItem: SpawnPointGhostPsiBasilisk
     requiresBibleUser: false
+  - type: Tag
+    tags: [ ]
 
 - type: entity
   parent: CryokinesRay
   id: CryokinesPsiPkaRay
-  name: Cryokinetic projectile
+  name: cryokinetic projectile
   description: A powerful surge of psi energy.
   categories: [ HideSpawnMenu ]
   components:
   - type: ChangeTemperatureOnCollide
     heat: -150000
- 
+
 - type: entity
-  name: white-Psio Psi Accelerator
-  parent: BaseItem
+  name: White-Psio Psi Accelerator
+  parent: PsiPka
   id: WeaponPsiPsioPka
   description: A psi-accelerator configuration that allows for deeper interaction with the psi field itself
   components:
   - type: Sprite
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    layers:
-    - state: icon-both
-  - type: Item
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    size: Large
-    shape:
-    - 0,0,2,1
+    state: icon-both
   - type: Gun
     fireRate: 0.5
     selectedMode: SemiAuto
@@ -105,7 +105,7 @@
     projectileSpeed: 125
   - type: Construction
     graph: WeaponPsiPsioPka
-    node: icon
+    node: weaponPsiPsioPka
   - type: AmmoCounter
   - type: Appearance
   - type: RechargeBasicEntityAmmo
@@ -116,10 +116,11 @@
     proto: BulletTaser
     capacity: 2
     count: 1
-  - type: Spellbook
-    spellActions:
-      ActionPsionikStrike: null
- 
+  - type: PsiPka
+    strikeAction: ActionPsionikStrike
+  - type: Tag
+    tags: [ ]
+
 - type: entity
   name : psionic surge
   id: PsionikalBullet
@@ -128,7 +129,7 @@
   components:
   - type: StaminaDamageOnCollide
     damage: 95
-    
+
 - type: entity
   parent: BaseAction
   id: ActionPsionikStrike
@@ -147,22 +148,3 @@
   - type: WorldTargetAction
     event: !type:ProjectileSpellEvent
       prototype: PsionikalBullet
-
-- type: entity
-  parent: BaseItem
-  id: PsiPka
-  name: white-Base Psi Accelerator
-  description: A tool that allows any sentient being to control the psi field. Requires a psi monkey brain to function.
-  components:
-  - type: Sprite
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    layers:
-    - state: icon-base
-  - type: Item
-    sprite: _SIS/Objects/Weapons/psipka.rsi
-    size: Large
-    shape:
-    - 0,0,2,1
-  - type: Tag
-    tags:
-    - BasePsiPka
