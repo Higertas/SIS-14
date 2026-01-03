@@ -258,7 +258,6 @@
   table: !type:AllSelector
     children:
     - id: Intellicard
-    - id: PsiPka #SIS psi-pka
     - id: BoxEncryptionKeyScience
     - id: BoxRDCircuitboards
     - id: ClothingBeltUtilityFilled
@@ -266,6 +265,7 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    - id: PsiPka # SIS-Psi_Pka
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
