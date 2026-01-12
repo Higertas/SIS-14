@@ -1,0 +1,123 @@
+- type: entity
+  name: banshee
+  parent:
+  - BaseMob
+  - MobCombat
+  id: MobBanshee
+  description: Their lives are constant pain due to their inner-body knees.
+  components:
+  - type: Sprite
+    sprite: Mobs/Ghosts/revenant.rsi
+    layers:
+    - state: active
+  - type: GhostTakeoverAvailable
+  - type: Physics
+    bodyStatus: InAir
+  - type: NoSlip
+  - type: Magboots
+  - type: MovementAlwaysTouching
+  - type: CanMoveInAir
+  - type: Damageable
+    damageContainer: BiologicalMetaphysical 
+    damageModifierSet: Banshee
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Eye
+    drawFov: false
+    visMask:
+      - Normal
+      - Ghost
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 100
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-revenant-name
+    description: ghost-role-information-revenant-description
+    rules: ghost-role-information-antagonist-rules
+    mindRoles:
+    - MindRoleGhostRoleSoloAntagonist
+    raffle:
+      settings: default
+  - type: Tag
+    tags:
+    - SlowImmune
+    - KnockdownImmune 
+  - type: ActionGrant
+    actions:
+    - ActionRepulseScream
+  - type: Gun
+    fireRate: 0.75
+    projectileSpeed: 15
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes: [ SemiAuto ]
+    soundGunshot: /Audio/Voice/Human/femalescream_3.ogg
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 15
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: BulletScreechSpread
+    capacity: 1
+    count: 1
+
+- type: entity
+  parent: ActionRepulse
+  id: ActionRepulseScream
+  name: Repulse Scream
+  description: Pushes entities away from the user.
+  components:
+  - type: RepulseAttract
+    speed: 13
+    range: 7
+  - type: Action
+    useDelay: 15
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Voice/Human/femalescream_1.ogg
+ 
+- type: entity
+  name: deafening screech
+  id: BulletScreech
+  parent: BulletTaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: Projectile
+    soundHit:
+      path: "/Audio/Weapons/Guns/Hits/bullet_hit.ogg"
+  - type: StunOnCollide
+    stunAmount: 2
+    knockdownAmount: 2
+    drop: false 
+    slowdownAmount: 2
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
+
+- type: entity
+  name: etoniktoneuvidit
+  id: BulletScreechSpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletScreech
+  components:
+  - type: ProjectileSpread
+    proto: BulletScreech
+    count: 3 
+    spread: 7
+
+
