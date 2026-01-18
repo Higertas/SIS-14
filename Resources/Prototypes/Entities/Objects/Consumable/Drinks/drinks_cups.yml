@@ -74,7 +74,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 10 # SIS-Water Cup Rebalance
+        maxVol: 10 # SIS-Rebalance_Water_Cup
   - type: Item
     size: Tiny
   - type: Sprite
