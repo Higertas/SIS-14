@@ -7,9 +7,9 @@
   description: Their lives are constant pain due to their inner-body knees.
   components:
   - type: Sprite
-    sprite: Mobs/Ghosts/revenant.rsi
+    sprite: _SIS/Mobs/Ghosts/banshee.rsi
     layers:
-    - state: active
+    - state: banshee
   - type: GhostTakeoverAvailable
   - type: Physics
     bodyStatus: InAir
@@ -60,10 +60,12 @@
   - type: ActionGrant
     actions:
     - ActionRepulseScream
+    - ActionBansheeCurse
   - type: Gun
     fireRate: 0.75
     projectileSpeed: 15
     selectedMode: SemiAuto
+    clumsyProof: true
     showExamineText: false
     availableModes: [ SemiAuto ]
     soundGunshot: /Audio/Voice/Human/femalescream_3.ogg
@@ -86,6 +88,9 @@
     speed: 13
     range: 7
   - type: Action
+    icon:
+      sprite: _SIS/Objects/Actions/banshee.rsi
+      state: repulse
     useDelay: 15
     sound: !type:SoundPathSpecifier
       path: /Audio/Voice/Human/femalescream_1.ogg
@@ -108,6 +113,15 @@
     slowdownAmount: 2
     walkSpeedModifier: 0.5
     sprintSpeedModifier: 0.5
+  - type: Ammo
+    muzzleFlash: null
+  - type: Sprite
+    noRot: false
+    sprite: _SIS/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    color: "#770f87"
+    layers:
+    - state: scream
+      shader: unshaded
 
 - type: entity
   name: etoniktoneuvidit
@@ -120,4 +134,21 @@
     count: 3 
     spread: 7
 
-
+- type: entity
+  parent: BaseSmiteAction
+  id: ActionBansheeCurse
+  name: Banshee Curse
+  description: Penis
+  components:
+  - type: Action
+    useDelay: 180
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Items/brokenbikehorn.ogg
+    icon:
+      sprite: Clothing/Mask/cluwne.rsi
+      state: icon
+  - type: EntityTargetAction
+    event: !type:ChangeComponentsSpellEvent 
+      toAdd:
+      - type: PermanentBlindness
+        blindness: 4
