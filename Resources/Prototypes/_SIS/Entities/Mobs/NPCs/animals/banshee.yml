@@ -4,7 +4,7 @@
   - BaseMob
   - MobCombat
   id: MobBanshee
-  description: Their lives are constant pain due to their inner-body knees.
+  description: A dark, ghostly female figure. She is completely intangible.
   components:
   - type: Sprite
     sprite: _SIS/Mobs/Ghosts/banshee.rsi
@@ -46,8 +46,8 @@
         - SmallMobLayer
   - type: GhostRole
     makeSentient: true
-    name: ghost-role-information-revenant-name
-    description: ghost-role-information-revenant-description
+    name: ghost-role-information-banshee-name
+    description: ghost-role-information-banshee-description
     rules: ghost-role-information-antagonist-rules
     mindRoles:
     - MindRoleGhostRoleSoloAntagonist
@@ -68,7 +68,7 @@
     clumsyProof: true
     showExamineText: false
     availableModes: [ SemiAuto ]
-    soundGunshot: /Audio/Voice/Human/femalescream_3.ogg
+    soundGunshot: /Audio/_SIS/Ghosts/Banshee/screech.ogg
   - type: RechargeBasicEntityAmmo
     showExamineText: false
     rechargeCooldown: 15
@@ -81,7 +81,7 @@
 - type: entity
   parent: ActionRepulse
   id: ActionRepulseScream
-  name: Repulse Scream
+  name: "[color=purple]Repulse Scream[/color]"
   description: Pushes entities away from the user.
   components:
   - type: RepulseAttract
@@ -93,7 +93,7 @@
       state: repulse
     useDelay: 15
     sound: !type:SoundPathSpecifier
-      path: /Audio/Voice/Human/femalescream_1.ogg
+      path: /Audio/_SIS/Ghosts/Banshee/scream.ogg
  
 - type: entity
   name: deafening screech
@@ -124,7 +124,7 @@
       shader: unshaded
 
 - type: entity
-  name: etoniktoneuvidit
+  name: deafening screech
   id: BulletScreechSpread
   categories: [ HideSpawnMenu ]
   parent: BulletScreech
@@ -137,18 +137,20 @@
 - type: entity
   parent: BaseSmiteAction
   id: ActionBansheeCurse
-  name: Banshee Curse
+  name: "[color=purple]Curse[/color]"
   description: Penis
   components:
   - type: Action
-    useDelay: 180
+    useDelay: 0
     sound: !type:SoundPathSpecifier
-      path: /Audio/Items/brokenbikehorn.ogg
+      path: /Audio/_SIS/Ghosts/Banshee/curse.ogg
     icon:
-      sprite: Clothing/Mask/cluwne.rsi
-      state: icon
+      sprite: _SIS/Objects/Actions/banshee.rsi
+      state: curse
   - type: EntityTargetAction
     event: !type:ChangeComponentsSpellEvent 
       toAdd:
-      - type: PermanentBlindness
-        blindness: 4
+      - type: Unrevivable
+        cloneable: true
+  - type: LimitedCharges
+    maxCharges: 1

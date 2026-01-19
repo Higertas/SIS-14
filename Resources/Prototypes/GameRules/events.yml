@@ -36,6 +36,7 @@
     - id: ClosetSkeleton
     - id: KingRatMigration
     - id: RevenantSpawn
+    - id: BansheeSpawn
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 
