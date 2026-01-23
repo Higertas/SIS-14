@@ -5,6 +5,10 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  #SIS-Practice Guns start
+  - WeaponDisablerPractice
+  - WeaponLaserCarbinePractice
+  #SIS-Practice Guns end
   - FlowerWreath
   - Hairflower
   - Headphones

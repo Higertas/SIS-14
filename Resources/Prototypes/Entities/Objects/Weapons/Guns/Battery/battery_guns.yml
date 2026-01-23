@@ -279,6 +279,10 @@
     proto: RedLaserPractice
     fireCost: 62.5
   - type: PacifismAllowedGun
+  #SIS-Practice Guns start
+  - type: BatterySelfRecharger
+    autoRechargeRate: 40
+  #SIS-Practice Guns end
 
 - type: entity
   name: pulse pistol
@@ -534,6 +538,10 @@
     - Taser
     - Sidearm
   - type: PacifismAllowedGun
+  #SIS-Practice Guns start
+  - type: BatterySelfRecharger
+    autoRechargeRate: 40
+  #SIS-Practice Guns end
 
 - type: entity
   name: disabler
