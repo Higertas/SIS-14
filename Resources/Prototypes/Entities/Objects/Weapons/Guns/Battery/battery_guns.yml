@@ -570,6 +570,10 @@
     guides:
     - Security
     - Antagonists
+  #SIS-Practice Guns start. Какого черта станнер берет парент от своей тренировочной версии...?
+  - type: BatterySelfRecharger
+    autoRechargeRate: 0
+  #SIS-Practice Guns end 
   - type: PacifismAllowedGun
 
 - type: entity
