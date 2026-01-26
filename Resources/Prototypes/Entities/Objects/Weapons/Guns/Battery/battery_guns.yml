@@ -571,8 +571,8 @@
     - Security
     - Antagonists
   # SIS-Practice_Guns Start
-  - type: BatterySelfRecharger # Какого черта станнер берет парент от своей тренировочной версии...?
-    autoRechargeRate: 0
+  - type: BatterySelfRecharger
+    autoRechargeRate: 0 # Какого черта станнер берет парент от своей тренировочной версии...?
   # SIS-Practice_Guns End
   - type: PacifismAllowedGun
 
