@@ -1,14 +1,12 @@
 - files: ["screech.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Kinetic Games"
-  source: "https://www.myinstants.com/en/instant/ghost-2-damaged-phasmophobia-14133/"
+  license: "CC0 1.0"
+  source: "https://freesound.org/people/twistedkingdom3/sounds/746112/"
 
 - files: ["scream.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Kinetic Games"
-  source: "https://www.myinstants.com/en/instant/phasmophobia-ghost-attack-1-91587/"
+  license: "CC0 1.0"
+  source: "https://freesound.org/people/onderwish/sounds/469141/"
   
 - files: ["curse.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Kinetic Games"
-  source: "https://phasmophobia.fandom.com/ru/wiki/%D0%91%D0%B0%D0%BD%D1%88%D0%B8"
+  license: "CC BY 4.0"
+  copyright: "klankbeeld"
+  source: "https://freesound.org/people/klankbeeld/sounds/169976/"
