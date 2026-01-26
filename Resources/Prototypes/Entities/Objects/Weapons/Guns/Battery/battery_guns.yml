@@ -279,10 +279,10 @@
     proto: RedLaserPractice
     fireCost: 62.5
   - type: PacifismAllowedGun
-  #SIS-Practice Guns start
+  # SIS-Practice_Guns Start
   - type: BatterySelfRecharger
     autoRechargeRate: 40
-  #SIS-Practice Guns end
+  # SIS-Practice_Guns End
 
 - type: entity
   name: pulse pistol
@@ -538,10 +538,10 @@
     - Taser
     - Sidearm
   - type: PacifismAllowedGun
-  #SIS-Practice Guns start
+  # SIS-Practice_Guns Start
   - type: BatterySelfRecharger
     autoRechargeRate: 40
-  #SIS-Practice Guns end
+  # SIS-Practice_Guns End
 
 - type: entity
   name: disabler
@@ -570,10 +570,10 @@
     guides:
     - Security
     - Antagonists
-  #SIS-Practice Guns start. Какого черта станнер берет парент от своей тренировочной версии...?
-  - type: BatterySelfRecharger
+  # SIS-Practice_Guns Start
+  - type: BatterySelfRecharger # Какого черта станнер берет парент от своей тренировочной версии...?
     autoRechargeRate: 0
-  #SIS-Practice Guns end 
+  # SIS-Practice_Guns End
   - type: PacifismAllowedGun
 
 - type: entity
