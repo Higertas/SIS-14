@@ -18,7 +18,7 @@
   - type: MovementAlwaysTouching
   - type: CanMoveInAir
   - type: Damageable
-    damageContainer: BiologicalMetaphysical 
+    damageContainer: BiologicalMetaphysical
     damageModifierSet: Banshee
   - type: Destructible
     thresholds:
@@ -56,7 +56,7 @@
   - type: Tag
     tags:
     - SlowImmune
-    - KnockdownImmune 
+    - KnockdownImmune
   - type: ActionGrant
     actions:
     - ActionRepulseScream
@@ -69,6 +69,7 @@
     showExamineText: false
     availableModes: [ SemiAuto ]
     soundGunshot: /Audio/_SIS/Ghosts/Banshee/screech.ogg
+    soundEmpty: null
   - type: RechargeBasicEntityAmmo
     showExamineText: false
     rechargeCooldown: 15
@@ -94,7 +95,7 @@
     useDelay: 15
     sound: !type:SoundPathSpecifier
       path: /Audio/_SIS/Ghosts/Banshee/scream.ogg
- 
+
 - type: entity
   name: deafening screech
   id: BulletScreech
@@ -109,7 +110,7 @@
   - type: StunOnCollide
     stunAmount: 2
     knockdownAmount: 2
-    drop: false 
+    drop: false
     slowdownAmount: 2
     walkSpeedModifier: 0.5
     sprintSpeedModifier: 0.5
@@ -131,7 +132,7 @@
   components:
   - type: ProjectileSpread
     proto: BulletScreech
-    count: 3 
+    count: 3
     spread: 7
 
 - type: entity
@@ -148,7 +149,7 @@
       sprite: _SIS/Objects/Actions/banshee.rsi
       state: curse
   - type: EntityTargetAction
-    event: !type:ChangeComponentsSpellEvent 
+    event: !type:ChangeComponentsSpellEvent
       toAdd:
       - type: Unrevivable
         cloneable: true
