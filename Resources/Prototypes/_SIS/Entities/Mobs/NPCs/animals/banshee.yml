@@ -156,5 +156,5 @@
       toAdd:
       - type: Unrevivable
         cloneable: true
-  - type: LimitedCharges # Почему то из за этого компонента немного ломается иконка.
-    maxCharges: 1
+  - type: LimitedCharges
+    lastCharges: 1
