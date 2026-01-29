@@ -107,6 +107,9 @@
   - type: Projectile
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/bullet_hit.ogg"
+    damage:
+      types:
+        Cellular: 5
   - type: StunOnCollide
     stunAmount: 2
     knockdownAmount: 2
@@ -139,7 +142,7 @@
   parent: BaseSmiteAction
   id: ActionBansheeCurse
   name: "[color=purple]Curse[/color]"
-  description: Penis
+  description: Curse a crew member you like, making them unrespawnable.
   components:
   - type: Action
     useDelay: 0
@@ -153,5 +156,5 @@
       toAdd:
       - type: Unrevivable
         cloneable: true
-  - type: LimitedCharges
+  - type: LimitedCharges # Почему то из за этого компонента немного ломается иконка.
     maxCharges: 1
