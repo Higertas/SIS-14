@@ -1,9 +1,9 @@
 - type: entity
-  name: banshee
   parent:
   - BaseMob
   - MobCombat
   id: MobBanshee
+  name: banshee
   description: A dark, ghostly female figure. She is completely intangible.
   components:
   - type: Sprite
@@ -97,9 +97,9 @@
       path: /Audio/_SIS/Ghosts/Banshee/scream.ogg
 
 - type: entity
-  name: deafening screech
-  id: BulletScreech
   parent: BulletTaser
+  id: BulletScreech
+  name: deafening screech
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -128,10 +128,10 @@
       shader: unshaded
 
 - type: entity
-  name: deafening screech
-  id: BulletScreechSpread
-  categories: [ HideSpawnMenu ]
   parent: BulletScreech
+  id: BulletScreechSpread
+  name: deafening screech
+  categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
     proto: BulletScreech
