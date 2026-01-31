@@ -73,14 +73,13 @@
     radius: 6
     castShadows: false
     enabled: false
-  # SIS-Ghost_Speed_Up Start
+  # SIS-Start
   - type: MovementSpeedModifier
     baseWalkSpeed: 24
-  # SIS-Ghost_Speed_Up End
-  # SIS-Ghost_Show_Job Start
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
-  # SIS-Ghost_Show_Job End
+  - type: ShowHealthBars
+  # SIS-End
 
 # proto for player ghosts specifically
 - type: entity
