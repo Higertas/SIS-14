@@ -11,7 +11,7 @@
     sprite: _SIS/Clothing/Hands/Gloves/master.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
-    fiberColor: fibers-black
+    fiberColor: fibers-gold
   - type: MeleeWeapon
     attackRate: 0.6
     damage:
