@@ -23,10 +23,9 @@
     mustBeEquippedToUse: true
   - type: Tag
     tags:
-    - WhitelistChameleon
     - Kangaroo
   - type: UseDelay
-    delay: 5
+    delay: 10
   - type: UseDelayOnMeleeHit
   - type: MeleeThrowOnHit
     stunTime: 0.2
