@@ -25,7 +25,7 @@
     tags:
     - Kangaroo
   - type: UseDelay
-    delay: 10
+    delay: 15
   - type: UseDelayOnMeleeHit
   - type: MeleeThrowOnHit
     stunTime: 0.2
