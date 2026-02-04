@@ -73,7 +73,7 @@
 - type: entity
   parent: BaseAction
   id: ActionPyrokinesBall
-  name: "[color=blue]Cryokines[/color]"
+  name: "[color=red]Pyrokines[/color]"
   description: A powerful surge of psi energy that sets everyone in its path on fire.
   components:
   - type: Action
