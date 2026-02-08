@@ -49,9 +49,9 @@
     tags: [ ]
 
 - type: entity
-  name: scorching bolt
-  id: BoltPyrokinesis
   parent: WatcherBoltMagmawing
+  id: BoltPyrokinesis
+  name: pyrokinesis bolt
   categories: [ HideSpawnMenu ]
   components:
   - type: Reflective
