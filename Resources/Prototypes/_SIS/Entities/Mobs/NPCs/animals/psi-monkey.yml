@@ -1,7 +1,7 @@
 - type: entity
-  name: psi-monkey
-  id: MobFirePsiMonkey
   parent: MobBaseAncestor
+  id: MobFirePsiMonkey
+  name: psi-monkey
   description: A strange-looking monkey with a red, exposed brain.
   components:
   - type: ActionGrant
@@ -69,7 +69,7 @@
   name: Pyrokinetic projectile
   description: A powerful surge of psi energy.
   categories: [ HideSpawnMenu ]
- 
+
 - type: entity
   parent: BaseAction
   id: ActionPyrokinesBall
@@ -89,9 +89,9 @@
     sentence: action-speech-pyrokines # На случай если кто то зачем то вколит в них когнизин.
 
 - type: entity
-  name: psi-monkey
-  id: MobIcePsiMonkey
   parent: MobBaseAncestor
+  id: MobIcePsiMonkey
+  name: psi-monkey
   description: A strange-looking monkey with a blue exposed brain.
   components:
   - type: ActionGrant
