@@ -58,13 +58,14 @@
     reflective:
     - Energy
   - type: Projectile
-    #   soundHit:  Waiting on serv3
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
         Heat: 10
   - type: ChangeTemperatureOnCollide
-    heat: 100000 #This may be a bit underpowered, but in testing, 130000 was RIDICULOUS and killed in seconds.
+    heat: 0
+  - type: IgniteOnCollide
+    fireStacks: 1
     
 - type: entity
   name: White-Cryo Psi Accelerator
@@ -166,7 +167,7 @@
     useDelay: 60
     itemIconStyle: BigAction
     icon:
-      sprite: _SIS/Objects/Weapons/psipka.rsi
+      sprite: _SIS/Objects/Actions/psipka.rsi
       state: ability
   - type: TargetAction
     range: 120
