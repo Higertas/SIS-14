@@ -32,6 +32,6 @@
     weight: 6
     duration: 1
     earliestStart: 30
-    minimumPlayers: 10
+    minimumPlayers: 15
   - type: RandomSpawnRule
-    prototype: MobBanshee
+    prototype: SpawnPointGhostBanshee
