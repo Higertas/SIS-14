@@ -1,4 +1,4 @@
-ent-MobBanshee = банши
+ent-MobBanshee = Банши
     .desc = Тёмная, призрачная женская фигура. Она абсолютно неосязаема.
 ent-ActionRepulseScream = [color=purple]Отталкивающий крик[/color]
     .desc = Громкий крик, отталкивающий все вокруг.
