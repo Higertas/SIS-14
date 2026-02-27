@@ -3,7 +3,7 @@
   - BaseMob
   - MobCombat
   id: MobBanshee
-  name: Banshee
+  name: banshee
   description: A dark, ghostly female figure. She is completely intangible.
   components:
   - type: Sprite
