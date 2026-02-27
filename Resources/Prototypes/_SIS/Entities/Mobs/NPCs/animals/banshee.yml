@@ -20,14 +20,21 @@
   - type: Damageable
     damageContainer: BiologicalMetaphysical
     damageModifierSet: Banshee
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 3.5
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 800
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: PointLight
+    color: MediumPurple
+    radius: 2
+    softness: 1
   - type: Eye
     drawFov: false
     visMask:
@@ -86,8 +93,8 @@
   description: Pushes entities away from the user.
   components:
   - type: RepulseAttract
-    speed: 13
-    range: 7
+    speed: 5
+    range: 4
   - type: Action
     icon:
       sprite: _SIS/Objects/Actions/banshee.rsi

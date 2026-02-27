@@ -10,3 +10,16 @@
     rules: ghost-role-information-familiar-rules
   - type: GhostRoleMobSpawner
     prototype: MobPsiBasilisk
+
+- type: entity
+  id: SpawnPointGhostBanshee
+  name: ghost role spawn point
+  suffix: Banshee
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: ghost-role-information-banshee-name
+    description: ghost-role-information-banshee-description
+    rules: ghost-role-information-antagonist-rules
+  - type: GhostRoleMobSpawner
+    prototype: MobBanshee
