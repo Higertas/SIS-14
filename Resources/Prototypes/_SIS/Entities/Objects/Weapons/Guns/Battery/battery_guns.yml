@@ -6,3 +6,54 @@
   components:
   - type: BatterySelfRecharger
     autoRechargeRate: 6
+
+- type: entity
+  name: energy blaster Apollo-H4
+  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  id: WeaponEnergyBlaster
+  description: A modern low-power energy blaster, widely used by most armed forces. It has a powerful self-regenerating battery, penetrating power, and a comfortable grip. This one has the Syndicate's color scheme.
+  components:
+  - type: Sprite
+    sprite: _SIS/Objects/Weapons/Guns/Battery/blaster.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-1
+      visible: false
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: Clothing
+    sprite: _SIS/Objects/Weapons/Guns/Battery/blaster.rsi
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_SIS/Weapons/Gunshots/blaster.ogg
+    fireRate: 2
+    projectileSpeed: 25
+  - type: BatteryAmmoProvider
+    proto: BulletEnergyBlaster
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+    autoRechargePauseTime: 2
+
+- type: entity
+  name: blaster bolt
+  id: BulletEnergyBlaster
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaserWindowPiercingMagnum
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 10
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectHeavyLaser
