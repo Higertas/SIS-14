@@ -41,7 +41,7 @@
     proto: BulletEnergyBlaster
     fireCost: 50
   - type: BatterySelfRecharger
-    autoRechargeRate: 25
+    autoRechargeRate: 50
     autoRechargePauseTime: 2
 
 - type: entity
