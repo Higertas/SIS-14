@@ -37,6 +37,10 @@
       path: /Audio/_SIS/Weapons/Gunshots/blaster.ogg
     fireRate: 2
     projectileSpeed: 25
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
   - type: BatteryAmmoProvider
     proto: BulletEnergyBlaster
     fireCost: 50
