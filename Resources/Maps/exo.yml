@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 270.1.0
+  engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/27/2026 14:45:14
-  entityCount: 20043
+  time: 03/08/2026 15:02:53
+  entityCount: 20047
 maps:
 - 1
 grids:
@@ -95,7 +95,7 @@ entities:
     - type: MetaData
       name: grid
     - type: Transform
-      pos: -0.7083334,1
+      pos: -0.7083334,0.8811691
       parent: 1
     - type: MapGrid
       chunks:
@@ -6135,8 +6135,9 @@ entities:
     - type: BecomesStation
       id: Exo
     - type: ImplicitRoof
+    - type: TileHistory
+      chunkHistory: {}
     - type: ExplosionAirtightGrid
-    - type: NavMap
 - proto: ActionStethoscope
   entities:
   - uid: 6661
@@ -7547,9 +7548,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -50.5,-47.5
       parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Atmospherics
     - type: DeviceList
       devices:
       - 8748
@@ -10168,7 +10166,7 @@ entities:
       pos: 11.5,-30.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -260598.67
+      secondsUntilStateChange: -260311.42
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10524,7 +10522,7 @@ entities:
       pos: 34.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -36096.363
+      secondsUntilStateChange: -35809.105
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10800,8 +10798,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 52.5,-25.5
       parent: 2
-    - type: AccessReader
-      accessListsOriginal: []
   - uid: 9251
     components:
     - type: Transform
@@ -27616,6 +27612,31 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-62.5
+      parent: 2
+  - uid: 19379
+    components:
+    - type: Transform
+      pos: 92.5,-40.5
+      parent: 2
+  - uid: 19380
+    components:
+    - type: Transform
+      pos: 92.5,-39.5
+      parent: 2
+  - uid: 19392
+    components:
+    - type: Transform
+      pos: 92.5,-50.5
+      parent: 2
+  - uid: 19398
+    components:
+    - type: Transform
+      pos: 92.5,-50.5
+      parent: 2
+  - uid: 19418
+    components:
+    - type: Transform
+      pos: 92.5,-51.5
       parent: 2
   - uid: 19489
     components:
@@ -45785,6 +45806,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -54.5,-46.5
       parent: 2
+  - uid: 17228
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 53.5,-103.5
+      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 5053
@@ -45828,14 +45855,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 30.5,-101.5
-      parent: 2
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 16127
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 53.5,-103.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -61131,13 +61150,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 34.5,-60.5
-      parent: 2
-- proto: GasMinerPlasma
-  entities:
-  - uid: 19003
-    components:
-    - type: Transform
-      pos: 42.5,-60.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -87578,9 +87590,10 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 19378
+  - uid: 19003
     components:
     - type: Transform
+      rot: 1.5707963267948966 rad
       pos: -5.5,-52.5
       parent: 2
     - type: Fixtures
@@ -89751,6 +89764,13 @@ entities:
     components:
     - type: Transform
       pos: 82.48561,-72.595604
+      parent: 2
+- proto: OrganSkeletonPersonTorso
+  entities:
+  - uid: 7331
+    components:
+    - type: Transform
+      pos: 78.98892,-25.47695
       parent: 2
 - proto: OxygenCanister
   entities:
@@ -92492,7 +92512,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 21.5,-70.5
       parent: 2
-    - type: Timer
   - uid: 9798
     components:
     - type: Transform
@@ -100436,17 +100455,17 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 16127
+    components:
+    - type: Transform
+      pos: 6.5,-55.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 16134
     components:
     - type: Transform
       pos: 2.498827,-33.284237
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 17228
-    components:
-    - type: Transform
-      pos: 6.5,-55.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -108814,13 +108833,6 @@ entities:
     components:
     - type: Transform
       pos: 45.350067,-73.39173
-      parent: 2
-- proto: TorsoSkeleton
-  entities:
-  - uid: 7331
-    components:
-    - type: Transform
-      pos: 78.98892,-25.47695
       parent: 2
 - proto: Tourniquet
   entities:

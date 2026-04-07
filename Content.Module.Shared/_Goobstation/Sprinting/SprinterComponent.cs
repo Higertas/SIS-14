@@ -117,10 +117,10 @@ public sealed partial class SprinterComponent : Component
     [DataField]
     public DamageSpecifier SprintDamageSpecifier = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new ()
         {
             { "Blunt", 10 },
-        }
+        },
     };
 
     /// <summary>
