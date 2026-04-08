@@ -35,7 +35,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_SIS/Weapons/Gunshots/blaster.ogg
-    fireRate: 2
+    fireRate: 3
     projectileSpeed: 25
     selectedMode: FullAuto
     availableModes:
