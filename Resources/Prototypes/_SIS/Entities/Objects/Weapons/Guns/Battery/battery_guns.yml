@@ -8,8 +8,8 @@
     autoRechargeRate: 6
 
 - type: entity
-  name: energy blaster Apollo-H4
-  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
+  name: Apollo-H4
+  parent: [BaseWeaponBatterySmall, BaseSyndicateContraband]
   id: WeaponEnergyBlaster
   description: A modern low-power energy blaster, widely used by most armed forces. It has a powerful self-regenerating battery, penetrating power, and a comfortable grip. This one has the Syndicate's color scheme.
   components:
@@ -17,36 +17,41 @@
     sprite: _SIS/Objects/Weapons/Guns/Battery/blaster.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-1
-      visible: false
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Clothing
+    sprite: _SIS/Objects/Weapons/Guns/Battery/blaster.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_SIS/Weapons/Gunshots/blaster.ogg
+    projectileSpeed: 25
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+  - type: BatteryAmmoProvider
+    proto: BulletEnergyBlaster
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRechargeRate: 40
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Appearance
-  - type: Clothing
-    sprite: _SIS/Objects/Weapons/Guns/Battery/blaster.rsi
   - type: Tag
     tags:
     - Sidearm
-  - type: Gun
-    soundGunshot:
-      path: /Audio/_SIS/Weapons/Gunshots/blaster.ogg
-    fireRate: 3
-    projectileSpeed: 25
-    selectedMode: FullAuto
-    availableModes:
-      - FullAuto
-      - SemiAuto
-  - type: BatteryAmmoProvider
-    proto: BulletEnergyBlaster
-    fireCost: 50
-  - type: BatterySelfRecharger
-    autoRechargeRate: 50
-    autoRechargePauseTime: 2
+    - WeaponAntiqueLaser
+    - LaserWeapon
+  - type: StaticPrice
+    price: 750
+  - type: SentienceTarget # I hope this is only the captain's gun
+    flavorKind: station-event-random-sentience-flavor-inanimate
+    weight: 0.0002 # 5,000 times less likely than 1 regular animal
+    # not putting a BlockMovement component here cause that's funny.
 
 - type: entity
   name: blaster bolt
