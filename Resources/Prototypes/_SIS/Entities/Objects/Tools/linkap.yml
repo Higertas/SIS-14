@@ -1,0 +1,42 @@
+- type: entity
+  parent: [ BaseItem, StorePresetLinkap ]
+  id: LinkapBaze
+  name: linkap
+  description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
+  components:
+    - type: Sprite
+      sprite: _SIS/Objects/Devices/linkap.rsi
+      layers:
+      - state: icon
+    - type: UserInterface
+      interfaces:
+        enum.StoreUiKey.Key:
+          type: StoreBoundUserInterface
+    - type: ActivatableUI
+      key: enum.StoreUiKey.Key
+    - type: Store
+      refundAllowed: false
+      balance:
+        KT: 40
+
+- type: entity
+  parent: LinkapBaze
+  id: LinkapLow
+  name: linkap
+  description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
+  components:
+    - type: Store
+      refundAllowed: false
+      balance:
+        KT: 20 
+
+- type: entity
+  parent: LinkapBaze
+  id: LinkapHigh
+  name: linkap
+  description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
+  components:
+    - type: Store
+      refundAllowed: false
+      balance:
+        KT: 60 

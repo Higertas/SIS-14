@@ -1,0 +1,13 @@
+- type: entity
+  id: StorePresetLinkap
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-linkap
+    categories:
+    - LinkapArmory # Пушки/Гранаты
+    - LinkapAmmunition # Патроны/Зарядники
+    - LinkapMedicine # Медицина
+    - LinkapDevices # Прочее снаряжение
+    currencyWhitelist:
+    - KT

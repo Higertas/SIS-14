@@ -1,0 +1,517 @@
+# Вооружение
+
+- type: listing
+  id: LinkapLecter
+  name: linkap-lecter-name
+  description: linkap-lecter-desc
+  productEntity: WeaponRifleLecter
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapDrozd
+  name: linkap-drozd-name
+  description: linkap-drozd-desc
+  productEntity: WeaponSubMachineGunDrozd
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapKammerer
+  name: linkap-kammerer-name
+  description: linkap-kammerer-desc
+  productEntity: WeaponShotgunKammerer
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapWT
+  name: linkap-wt-name
+  description: linkap-wt-desc
+  productEntity: WeaponSubMachineGunWt550
+  cost:
+    KT: 20
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapEnforcer
+  name: linkap-enforcer-name
+  description: linkap-enforcer-desc
+  productEntity: WeaponShotgunEnforcer
+  cost:
+    KT: 20
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapXL8
+  name: linkap-xl8-name
+  description: linkap-xl8-desc
+  productEntity: WeaponRifleLecterXL8
+  cost:
+    KT: 100
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapN1984
+  name: linkap-n1984-name
+  description: linkap-n1984-desc
+  productEntity: WeaponPistolN1984
+  cost:
+    KT: 35
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapPulsePistol
+  name: linkap-pulse-pistol-name
+  description: linkap-pulse-pistol-desc
+  productEntity: WeaponPulsePistol
+  cost:
+    KT: 50
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapRPG
+  name: linkap-rpg-name
+  description: linkap-rpg-desc
+  productEntity: WeaponLauncherRocket
+  cost:
+    KT: 35
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapEnergySword
+  name: linkap-esword-name
+  description: linkap-esword-desc
+  productEntity: EnergySword
+  cost:
+    KT: 50
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapDisabler
+  name: linkap-disabler-name
+  description: linkap-disabler-desc
+  productEntity: WeaponDisabler
+  cost:
+    KT: 10
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapDisablerSmg
+  name: linkap-disabler-smg-name
+  description: linkap-disabler-smg-desc
+  productEntity: WeaponDisablerSMG
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapStunbaton
+  name: linkap-stunbaton-name
+  description: linkap-stunbaton-desc
+  productEntity: Stunbaton
+  cost:
+    KT: 10
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapTruncheon
+  name: linkap-truncheon-name
+  description: linkap-truncheon-desc
+  productEntity: Truncheon
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapLaserCarbine
+  name: linkap-carbine-name
+  description: linkap-carbine-desc
+  productEntity: WeaponLaserCarbine
+  cost:
+    KT: 15
+  categories:
+  - LinkapArmory
+  
+- type: listing
+  id: LinkapLaserCanon
+  name: linkap-laser-canon-name
+  description: linkap-laser-canon-desc
+  productEntity: WeaponLaserCannon
+  cost:
+    KT: 20
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapXrayCannon
+  name: linkap-xray-name
+  description: linkap-xray-desc
+  productEntity: WeaponXrayCannon
+  cost:
+    KT: 30
+  categories:
+  - LinkapArmory
+
+- type: listing
+  id: LinkapAdvancedLaser
+  name: linkap-advanced-laser-name
+  description: linkap-advanced-laser-desc
+  productEntity: WeaponAdvancedLaser
+  cost:
+    KT: 40
+  categories:
+  - LinkapArmory
+  
+# Аммуниция
+
+- type: listing
+  id: LinkapMagazineUraniumRifle
+  name: linkap-magazine-uranium-rifle-name
+  description: linkap-magazine-uranium-rifle-desc
+  productEntity: MagazineRifleUranium
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapMagazineRifle
+  name: linkap-magazine-rifle-name
+  description: linkap-magazine-rifle-desc
+  productEntity: MagazineRifle
+  cost:
+    KT: 1
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapMagazineIncendiaryRifle
+  name: linkap-magazine-incendiary-rifle-name
+  description: linkap-magazine-incendiary-rifle-desc
+  productEntity: MagazineRifleIncendiary
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition 
+
+- type: listing
+  id: LinkapMagazineSubMachineGun
+  name: linkap-magazine-submachin-name
+  description: linkap-magazine-submachin-desc
+  productEntity: MagazinePistolSubMachineGun
+  cost:
+    KT: 1
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapMagazineIncendiarySubMachineGun
+  name: linkap-magazine-submachin-incendiary-name
+  description: linkap-magazine-submachin-incendiary-desc
+  productEntity: MagazinePistolSubMachineGunIncendiary
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapMagazineUraniumSubMachineGun
+  name: linkap-magazine-uranium-rifle-name
+  description: linkap-magazine-uranium-rifle-desc
+  productEntity: MagazinePistolSubMachineGunUranium
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapBoxLethalshot
+  name: linkap-lethalshot-name
+  description: linkap-lethalshot-desc
+  productEntity: BoxLethalshot
+  cost:
+    KT: 1
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapBoxBeanbag
+  name: linkap-beanbag-name
+  description: linkap-beanbag-desc
+  productEntity: BoxBeanbag
+  cost:
+    KT: 1
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapBoxShotgunIncendiary
+  name: linkap-shotgun-incendiary-name
+  description: linkap-shotgun-incendiary-desc
+  productEntity: BoxShotgunIncendiary
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapBoxShellTranquilizer
+  name: linkap-tranquilizer-name
+  description: linkap-tranquilizer-desc
+  productEntity: BoxShellTranquilizer
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapCartridgeRocket
+  name: linkap-rocket-name
+  description: linkap-rocket-desc
+  productEntity: CartridgeRocket
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapPortableRecharger
+  name: linkap-portable-recharger-name
+  description: linkap-portable-recharger-desc
+  productEntity: PortableRecharger
+  cost:
+    KT: 15
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapMagazineMagnum
+  name: linkap-magazine-magnum-name
+  description: linkap-magazine-magnum-desc
+  productEntity: MagazineMagnum
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapEmpGrenade
+  name: linkap-emp-grenade-name
+  description: linkap-emp-grenade-desc
+  productEntity: EmpGrenade
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapSmokeGrenade
+  name: linkap-smoke-grenade-name
+  description: linkap-smoke-grenade-desc
+  productEntity: SmokeGrenade
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapGrenadeFlashBang
+  name: linkap-flashbang-name
+  description: linkap-flashbang-desc
+  productEntity: GrenadeFlashBang
+  cost:
+    KT: 2
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapGrenadeStinger
+  name: linkap-stinger-name
+  description: linkap-stinger-desc
+  productEntity: GrenadeStinger
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapTearGasGrenade
+  name: linkap-teargas-grenade-name
+  description: linkap-teargas-grenade-desc
+  productEntity: TearGasGrenade
+  cost:
+    KT: 5
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapGrenadeShrapnel
+  name: linkap-grenade-shrapnel-name
+  description: linkap-grenade-shrapnel-desc
+  productEntity: GrenadeShrapnel
+  cost:
+    KT: 7
+  categories:
+  - LinkapAmmunition
+
+- type: listing
+  id: LinkapExGrenade
+  name: linkap-ex-grenade-name
+  description: linkap-ex-grenade-desc
+  productEntity: ExGrenade
+  cost:
+    KT: 7
+  categories:
+  - LinkapAmmunition
+  
+# Медицина
+
+- type: listing
+  id: LinkapMedkit
+  name: linkap-medkit-name
+  description: linkap-medkit-desc
+  productEntity: MedkitFilled
+  cost:
+    KT: 5
+  categories:
+  - LinkapMedicine
+
+- type: listing
+  id: LinkapMedkitCombat
+  name: linkap-medkit-combat-name
+  description: linkap-medkit-combat-desc
+  productEntity: MedkitCombatFilled
+  cost:
+    KT: 10
+  categories:
+  - LinkapMedicine
+
+- type: listing
+  id: LinkapEmergencyMedipen
+  name: linkap-emergency-medipen-name
+  description: linkap-emergency-medipen-desc
+  productEntity: EmergencyMedipen
+  cost:
+    KT: 5
+  categories:
+  - LinkapMedicine
+
+- type: listing
+  id: LinkapSyringeEphedrine
+  name: linkap-syringe-epherdine-name
+  description: linkap-syringe-epherdine-desc
+  productEntity: SyringeEphedrine
+  cost:
+    KT: 5
+  categories:
+  - LinkapMedicine
+
+- type: listing
+  id: LinkapCombatMedipen
+  name: linkap-combat-medipen-name
+  description: linkap-combat-medipen-desc
+  productEntity: CombatMedipen
+  cost:
+    KT: 10
+  categories:
+  - LinkapMedicine
+
+- type: listing
+  id: LinkapDefibrillatorCompact
+  name: linkap-defibrillator-compact-name
+  description: linkap-defibrillator-compact-desc
+  productEntity: DefibrillatorCompact
+  cost:
+    KT: 15
+  categories:
+  - LinkapMedicine
+  
+# Прочая экипировка
+
+- type: listing
+  id: LinkapClothingEyesHudMedSec
+  name: linkap-secmedhud-name
+  description: linkap-secmedhud-desc
+  productEntity: ClothingEyesHudMedSec
+  cost:
+    KT: 2
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapTelescopicShield
+  name: linkap-telescopic-shield-name
+  description: linkap-telescopic-shield-desc
+  productEntity: TelescopicShield
+  cost:
+    KT: 5
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapHandcuffs
+  name: linkap-handcuffs-name
+  description: linkap-handcuffs-desc
+  productEntity: Handcuffs
+  cost:
+    KT: 2
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapFlashlightSeclite
+  name: linkap-flashlight-name
+  description: linkap-flashlight-desc
+  productEntity: FlashlightSeclite
+  cost:
+    KT: 2
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapJawsOfLife
+  name: linkap-jawsoflife-name
+  description: linkap-jawsoflife-desc
+  productEntity: JawsOfLife
+  cost:
+    KT: 5
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapPinpointer
+  name: linkap-pinpointer-name
+  description: linkap-pinpointer-desc
+  productEntity: PinpointerNuclear
+  cost:
+    KT: 10
+  categories:
+  - LinkapDevices
+
+- type: listing
+  id: LinkapClothingBeltMilitaryWebbingERT
+  name: linkap-military-webbing-name
+  description: linkap-military-webbing-desc
+  productEntity: ClothingBeltMilitaryWebbingERT
+  cost:
+    KT: 1
+  categories:
+  - LinkapDevices

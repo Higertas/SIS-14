@@ -1,0 +1,4 @@
+- type: currency
+  id: KT
+  displayName: store-currency-display-kt
+  canWithdraw: false
