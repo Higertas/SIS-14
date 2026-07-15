@@ -24,7 +24,7 @@
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHelmetERTLeader
     outerClothing: ClothingOuterArmorBasic
-#    pocket2: FlashlightSeclite # SIS
+    # pocket2: FlashlightSeclite # SIS
 
 - type: startingGear
   id: ERTLeaderGearEVA
@@ -33,62 +33,65 @@
     back: ClothingBackpackERTLeader
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-#    eyes: ClothingEyesHudMedSec SIS
+    # eyes: ClothingEyesHudMedSec SIS
     neck: Whistle
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     pocket2: LinkapHigh # SIS
-#    pocket2: CombatKnife SIS-Start
-#    suitstorage: WeaponDisablerSMG
-#  storage:
-#    back:
-#    - Binoculars
-#    - HoloprojectorField
-#    - PhoneInstrument
-#    - PinpointerNuclear
-#    - PowerCellHigh
-#    - PowerCellHigh
-#    - MedkitCombatFilled # End of first line
-#    - MedkitCombatFilled
-#    - TelescopicShield
-#    belt:
-#    - Stunbaton
-#    - Handcuffs
-#    - Handcuffs
-#    - CrowbarRed
-#    - WeaponPistolN1984
-#    - MagazineMagnum
-#    - EmergencyMedipen SIS-End
+    # SIS-Start
+    # suitstorage: WeaponDisablerSMG
+  # storage:
+    # back:
+    # - Binoculars
+    # - HoloprojectorField
+    # - PhoneInstrument
+    # - PinpointerNuclear
+    # - PowerCellHigh
+    # - PowerCellHigh
+    # - MedkitCombatFilled # End of first line
+    # - MedkitCombatFilled
+    # - TelescopicShield
+    # belt:
+    # - Stunbaton
+    # - Handcuffs
+    # - Handcuffs
+    # - CrowbarRed
+    # - WeaponPistolN1984
+    # - MagazineMagnum
+    # - EmergencyMedipen
+    # SIS-End
 
 - type: startingGear
   parent: ERTLeaderGearEVA
   id: ERTLeaderGearArmed
   equipment:
     belt: WeaponDisabler # SIS
-#    pocket2: WeaponDisabler # SIS-Start
-#   suitstorage: WeaponRifleLecterXL8
-#  storage:
-#    back:
-#    - HoloprojectorField
-#    - PhoneInstrument
-#    - PinpointerNuclear
-#    - MagazineRifle
-#    - MagazineRifle
-#    - MagazineRifleIncendiary
-#    - MagazineRifleUranium
-#    - MedkitCombatFilled # End of first line
-#    - GrenadeShrapnel
-#    - EmpGrenade
-#    belt:
-#    - Truncheon
-#    - Handcuffs
-#    - Handcuffs
-#    - CrowbarRed
-#    - WeaponPistolN1984
-#    - MagazineMagnum
-#    - EmergencyMedipen # SIS-End
+  # SIS-Start
+    # pocket2: WeaponDisabler
+    # suitstorage: WeaponRifleLecterXL8
+  # storage:
+    # back:
+    # - HoloprojectorField
+    # - PhoneInstrument
+    # - PinpointerNuclear
+    # - MagazineRifle
+    # - MagazineRifle
+    # - MagazineRifleIncendiary
+    # - MagazineRifleUranium
+    # - MedkitCombatFilled # End of first line
+    # - GrenadeShrapnel
+    # - EmpGrenade
+    # belt:
+    # - Truncheon
+    # - Handcuffs
+    # - Handcuffs
+    # - CrowbarRed
+    # - WeaponPistolN1984
+    # - MagazineMagnum
+    # - EmergencyMedipen
+  # SIS-End
 
 - type: chameleonOutfit
   id: ERTLeaderChameleonOutfit
@@ -128,7 +131,7 @@
     head: ClothingHeadHatFez
     neck: ClothingNeckStoleChaplain
     outerClothing: ClothingOuterArmorBasic
-#    pocket2: FlashlightSeclite SIS
+    # pocket2: FlashlightSeclite # SIS
 
 - type: startingGear
   id: ERTChaplainGearEVA
@@ -137,13 +140,12 @@
     back: ClothingBackpackERTChaplain
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-#    eyes: ClothingEyesHudMedical SIS
+    # eyes: ClothingEyesHudMedical # SIS
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTChaplain
     id: ERTChaplainPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-#    pocket2: CombatKnife SIS
     pocket2: LinkapLow # SIS
   storage:
     back:
@@ -162,8 +164,10 @@
     - Lantern
     - Lantern
     - CrowbarRed
-#    - WeaponPistolMk58 SIS
-#    - MagazinePistol SIS
+    # SIS-Start
+    # - WeaponPistolMk58
+    # - MagazinePistol
+    # SIS-End
     - FlippoEngravedLighter
 
 - type: chameleonOutfit
@@ -217,7 +221,6 @@
     id: ERTEngineerPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-#    pocket2: CombatKnife SIS
     pocket2: LinkapLow # SIS
   storage:
     back:
@@ -239,8 +242,10 @@
     - PowerDrill
     - WelderIndustrialAdvanced
     - Multitool
-#    - WeaponPistolMk58 SIS
-#    - MagazinePistol SIS
+    # SIS-Start
+    # - WeaponPistolMk58
+    # - MagazinePistol
+    # SIS-End
     - EmergencyMedipen
 
 - type: startingGear
@@ -252,21 +257,23 @@
   storage:
     belt: []
   # SIS-End
-#    suitstorage: WeaponShotgunEnforcer SIS-Start
-#  storage:
-#    back:
-#    - RCD
-#    - GasAnalyzer
-#    - HolofanProjector
-#    - MiningDrillDiamond
-#    - BoxLethalshot
-#    - BoxShotgunSlug # End of first line
-#    - RCDAmmo
-#    - RCDAmmo
-#    - RCDAmmo
-#    - RCDAmmo
-#    - CableDetStack
-#    - BoxDetonator SIS-End
+  # SIS-Start
+    # suitstorage: WeaponShotgunEnforcer
+  # storage:
+    # back:
+    # - RCD
+    # - GasAnalyzer
+    # - HolofanProjector
+    # - MiningDrillDiamond
+    # - BoxLethalshot
+    # - BoxShotgunSlug # End of first line
+    # - RCDAmmo
+    # - RCDAmmo
+    # - RCDAmmo
+    # - RCDAmmo
+    # - CableDetStack
+    # - BoxDetonator
+  # SIS-End
 
 - type: chameleonOutfit
   id: ERTEngineerChameleonOutfit
@@ -302,7 +309,7 @@
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHelmetERTSecurity
     outerClothing: ClothingOuterArmorBasic
-#    pocket2: FlashlightSeclite SIS
+    # pocket2: FlashlightSeclite # SIS
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -311,35 +318,38 @@
     back: ClothingBackpackERTSecurity
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-#    eyes: ClothingEyesHudSecurity SIS
+    # eyes: ClothingEyesHudSecurity # SIS
     gloves: ClothingHandsGlovesCombat
     neck: SecurityWhistle
     outerClothing: ClothingOuterHardsuitERTSecurity
     id: ERTSecurityPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-    pocket2: LinkapBaze
-#    pocket2: CombatKnife SIS
-#    suitstorage: WeaponDisablerSMG SIS
+    pocket2: LinkapBaze # SIS
+    # suitstorage: WeaponDisablerSMG # SIS
   storage:
-#    back: SIS-Start
-#    - BoxZiptie
-#    - Flash
-#    - GrenadeFlashBang
-#    - TearGasGrenade
-#    - GrenadeStinger
-#    - MedkitCombatFilled # End of first line
-#    - TelescopicShield
-#    - HoloprojectorSecurity
-#    - PowerCellHigh SIS-End
+    # SIS-Start
+    # back:
+    # - BoxZiptie
+    # - Flash
+    # - GrenadeFlashBang
+    # - TearGasGrenade
+    # - GrenadeStinger
+    # - MedkitCombatFilled # End of first line
+    # - TelescopicShield
+    # - HoloprojectorSecurity
+    # - PowerCellHigh
+    # SIS-End
     belt:
-#    - Stunbaton SIS-Start
-#    - Handcuffs
-#    - Handcuffs
-#    - CrowbarRed SIS-End
+    # SIS-Start
+    # - Stunbaton
+    # - Handcuffs
+    # - Handcuffs
+    # - CrowbarRed
+    # SIS-End
     - WeaponPistolMk58
     - MagazinePistol
-#    - EmergencyMedipen SIS
+    # - EmergencyMedipen # SIS
 
 - type: startingGear
   id: ERTSecurityGearArmedRifle
@@ -490,7 +500,7 @@
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHelmetERTMedic
     outerClothing: ClothingOuterArmorBasic
-#    pocket2: FlashlightSeclite SIS
+    # pocket2: FlashlightSeclite # SIS
 
 - type: startingGear
   id: ERTMedicalGearEVA
@@ -505,8 +515,7 @@
     id: ERTMedicPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-    pocket2: LinkapLow
-#    pocket2: CombatKnife SIS
+    pocket2: LinkapLow # SIS
   storage:
     back:
     - Hypospray
@@ -523,43 +532,50 @@
     - ChemistryBottleOmnizine
     belt:
     - DefibrillatorCompact
-#    - MedkitCombatFilled SIS
+    # - MedkitCombatFilled SIS
     - CrowbarRed
-#    - WeaponPistolMk58 SIS
-#    - MagazinePistol SIS
+    # SIS-Start
+    # - WeaponPistolMk58
+    # - MagazinePistol
+    # SIS-End
     - EmergencyMedipen
 
 - type: startingGear
   parent: ERTMedicalGearEVA
   id: ERTMedicalGearArmed
   equipment:
-#    suitstorage: WeaponRifleLecter SIS
+    # SIS-Start
+    # suitstorage: WeaponRifleLecter
+    # pocket2: WeaponDisabler
+    # SIS-End
     belt: WeaponDisabler
   # SIS-Start
   storage:
     belt: []
   # SIS-End
-#  storage: SIS-Start
-#    back:
-#    - Hypospray
-#    - JugPunctTranex
-#    - JugPyraDerma
-#    - JugDexPlusSaline
-#    - JugTrico # End of first line
-#    - BeakerSmallArith
-#    - DefibrillatorCompact
-#    - MedkitCombatFilled
-#    - ClothingEyesGlassesChemical
-#    - ChemistryBottleOmnizine
-#    belt:
-#    - Truncheon
-#    - Zipties
-#    - CrowbarRed
-#    - MagazineRifle
-#    - MagazineRifle
-#    - MagazineRifleIncendiary
-#    - MagazineRifleUranium # End of first line
-#    - Zipties SIS-End
+  # SIS-Start
+  # storage:
+    # back:
+    # - Hypospray
+    # - JugPunctTranex
+    # - JugPyraDerma
+    # - JugDexPlusSaline
+    # - JugTrico # End of first line
+    # - BeakerSmallArith
+    # - DefibrillatorCompact
+    # - MedkitCombatFilled
+    # - ClothingEyesGlassesChemical
+    # - ChemistryBottleOmnizine
+    # belt:
+    # - Truncheon
+    # - Zipties
+    # - CrowbarRed
+    # - MagazineRifle
+    # - MagazineRifle
+    # - MagazineRifleIncendiary
+    # - MagazineRifleUranium # End of first line
+    # - Zipties
+  # SIS-End
 
 - type: chameleonOutfit
   id: ERTMedicalChameleonOutfit
@@ -595,7 +611,7 @@
     shoes: ClothingShoesGaloshes
     head: ClothingHeadHelmetERTJanitor
     outerClothing: ClothingOuterArmorBasic
-#    pocket2: FlashlightSeclite SIS
+    # pocket2: FlashlightSeclite # SIS
 
 - type: startingGear
   id: ERTJanitorGearEVA
@@ -610,8 +626,7 @@
     id: ERTJanitorPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-    pocket2: LinkapLow
-#    pocket2: CombatKnife SIS
+    pocket2: LinkapLow # SIS
     suitstorage: WeaponLauncherHydra
   storage:
     back:
@@ -632,8 +647,10 @@
     - LightReplacer
     - WireBrush
     - CrowbarRed
-#    - WeaponPistolMk58 SIS
-#    - MagazinePistol SIS
+    # SIS-Start
+    # - WeaponPistolMk58
+    # - MagazinePistol
+    # SIS-End
     - EmergencyMedipen
 
 - type: chameleonOutfit
