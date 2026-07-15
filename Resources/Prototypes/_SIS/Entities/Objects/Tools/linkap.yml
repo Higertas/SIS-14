@@ -2,6 +2,7 @@
   parent: [ BaseItem, StorePresetLinkap ]
   id: LinkapBaze
   name: linkap
+  suffix: Baze
   description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
   components:
     - type: Sprite
@@ -23,20 +24,22 @@
   parent: LinkapBaze
   id: LinkapLow
   name: linkap
+  suffix: Low
   description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
   components:
     - type: Store
       refundAllowed: false
       balance:
-        KT: 20 
+        KT: 20
 
 - type: entity
   parent: LinkapBaze
   id: LinkapHigh
   name: linkap
+  suffix: High
   description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
   components:
     - type: Store
       refundAllowed: false
       balance:
-        KT: 60 
+        KT: 60
