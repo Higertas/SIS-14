@@ -1,20 +1,20 @@
 #LINKAP
 - type: storeCategory
   id: LinkapArmory
-  name: store-caregory-linkap-armory
+  name: store-category-linkap-armory
   priority: 0
 
 - type: storeCategory
   id: LinkapAmmunition
-  name: store-caregory-linkap-ammunition
+  name: store-category-linkap-ammunition
   priority: 1
 
 - type: storeCategory
   id: LinkapMedicine
-  name: store-caregory-linkap-medicine
+  name: store-category-linkap-medicine
   priority: 2
 
 - type: storeCategory
   id: LinkapDevices
-  name: store-caregory-linkap-devices
+  name: store-category-linkap-devices
   priority: 3
