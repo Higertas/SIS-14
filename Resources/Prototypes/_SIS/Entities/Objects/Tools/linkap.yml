@@ -28,7 +28,6 @@
   description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
   components:
     - type: Store
-      refundAllowed: false
       balance:
         KT: 20
 
@@ -40,6 +39,5 @@
   description: A special device for soldiers to receive NanoTrasen equipment. NOT UPLINK!!!!
   components:
     - type: Store
-      refundAllowed: false
       balance:
         KT: 60
